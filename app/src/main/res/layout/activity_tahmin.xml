@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TahminActivity">
+
+    <Button
+        android:id="@+id/tahminButton"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/design"
+        android:backgroundTint="@color/purple_200"
+        android:text="Tahmin Et"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girdiText" />
+
+    <TextView
+
+        android:id="@+id/hakText"
+        android:layout_width="199dp"
+        android:layout_height="62dp"
+        android:gravity="center"
+        android:text="Kalan Hak : 2"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/arttirmaText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/arttirmaText"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/girdiText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hakText" />
+
+    <EditText
+        android:id="@+id/girdiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design"
+        android:backgroundTint="#FFEB3B"
+        android:ems="10"
+        android:hint="Sayı giriniz : "
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tahminButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arttirmaText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
